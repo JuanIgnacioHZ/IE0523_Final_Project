@@ -1,0 +1,668 @@
+$date
+	Sat Jul  8 21:37:44 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module transmisor_tb $end
+$scope module TX0 $end
+$var wire 1 ! GTX_CLK $end
+$var wire 1 " RESET $end
+$var wire 8 # TXD [7:0] $end
+$var wire 1 $ TX_EN $end
+$var wire 1 % TX_ER $end
+$var parameter 10 & D15_7_RD_Minus_EF $end
+$var parameter 10 ' D15_7_RD_Plus_EF $end
+$var parameter 10 ( D16_2_RD_Minus_50 $end
+$var parameter 10 ) D16_2_RD_Plus_50 $end
+$var parameter 10 * D16_7_RD_Minus_F0 $end
+$var parameter 10 + D16_7_RD_Plus_F0 $end
+$var parameter 10 , D17_7_RD_Minus_F1 $end
+$var parameter 10 - D17_7_RD_Plus_F1 $end
+$var parameter 10 . D18_7_RD_Minus_F2 $end
+$var parameter 10 / D18_7_RD_Plus_F2 $end
+$var parameter 10 0 D19_7_RD_Minus_F3 $end
+$var parameter 10 1 D19_7_RD_Plus_F3 $end
+$var parameter 10 2 D20_7_RD_Minus_F4 $end
+$var parameter 10 3 D20_7_RD_Plus_F4 $end
+$var parameter 10 4 D21_7_RD_Minus_F5 $end
+$var parameter 10 5 D21_7_RD_Plus_F5 $end
+$var parameter 10 6 D22_7_RD_Minus_F6 $end
+$var parameter 10 7 D22_7_RD_Plus_F6 $end
+$var parameter 10 8 D23_7_RD_Minus_F7 $end
+$var parameter 10 9 D23_7_RD_Plus_F7 $end
+$var parameter 10 : D24_7_RD_Minus_F8 $end
+$var parameter 10 ; D24_7_RD_Plus_F8 $end
+$var parameter 10 < D25_7_RD_Minus_F9 $end
+$var parameter 10 = D25_7_RD_Plus_F9 $end
+$var parameter 10 > D26_4_RD_Minus_9A $end
+$var parameter 10 ? D26_4_RD_Plus_9A $end
+$var parameter 10 @ D26_7_RD_Minus_FA $end
+$var parameter 10 A D26_7_RD_Plus_FA $end
+$var parameter 10 B D27_7_RD_Minus_FB $end
+$var parameter 10 C D27_7_RD_Plus_FB $end
+$var parameter 10 D D28_7_RD_Minus_FC $end
+$var parameter 10 E D28_7_RD_Plus_FC $end
+$var parameter 10 F D29_7_RD_Minus_FD $end
+$var parameter 10 G D29_7_RD_Plus_FD $end
+$var parameter 10 H D30_7_RD_Minus_FE $end
+$var parameter 10 I D30_7_RD_Plus_FE $end
+$var parameter 10 J D31_7_RD_Minus_FF $end
+$var parameter 10 K D31_7_RD_Plus_FF $end
+$var parameter 10 L D5_6_RD_Minus_C5 $end
+$var parameter 10 M D5_6_RD_Plus_C5 $end
+$var parameter 10 N D6_5_RD_Minus_A6 $end
+$var parameter 10 O D6_5_RD_Plus_A6 $end
+$var parameter 17 P DATA_GO $end
+$var parameter 10 Q DATO_INVALIDO1 $end
+$var parameter 10 R DATO_INVALIDO2 $end
+$var parameter 17 S END_OF_PACKET_NOEXT $end
+$var parameter 17 T EPD2_NOEXT $end
+$var parameter 17 U EPD3 $end
+$var parameter 17 V GENERATE_CODE_GROUPS $end
+$var parameter 17 W IDLE $end
+$var parameter 17 X IDLE_DISPARITY_OK $end
+$var parameter 17 Y IDLE_DISPARITY_TEST $end
+$var parameter 17 Z IDLE_DISPARITY_WRONG $end
+$var parameter 17 [ IDLE_I1B $end
+$var parameter 17 \ IDLE_I2B $end
+$var parameter 10 ] K23_7_RD_Minus_F7 $end
+$var parameter 10 ^ K23_7_RD_Plus_F7 $end
+$var parameter 10 _ K27_7_RD_Minus_FB $end
+$var parameter 10 ` K27_7_RD_Plus_FB $end
+$var parameter 10 a K28_0_RD_Minus_1C $end
+$var parameter 10 b K28_0_RD_Plus_1C $end
+$var parameter 10 c K28_1_RD_Minus_3C $end
+$var parameter 10 d K28_1_RD_Plus_3C $end
+$var parameter 10 e K28_2_RD_Minus_5C $end
+$var parameter 10 f K28_2_RD_Plus_5C $end
+$var parameter 10 g K28_3_RD_Minus_7C $end
+$var parameter 10 h K28_3_RD_Plus_7C $end
+$var parameter 10 i K28_4_RD_Minus_9C $end
+$var parameter 10 j K28_4_RD_Plus_9C $end
+$var parameter 10 k K28_5_RD_Minus_BC $end
+$var parameter 10 l K28_5_RD_Plus_BC $end
+$var parameter 10 m K28_6_RD_Minus_DC $end
+$var parameter 10 n K28_6_RD_Plus_DC $end
+$var parameter 10 o K28_7_RD_Minus_FC $end
+$var parameter 10 p K28_7_RD_Plus_FC $end
+$var parameter 10 q K29_7_RD_Minus_FD $end
+$var parameter 10 r K29_7_RD_Plus_FD $end
+$var parameter 10 s K30_7_RD_Minus_FE $end
+$var parameter 10 t K30_7_RD_Plus_FE $end
+$var parameter 17 u SPECIAL_GO $end
+$var parameter 17 v START_OF_PACKET $end
+$var parameter 17 w TX_DATA $end
+$var parameter 17 x TX_PACKET $end
+$var parameter 17 y XMIT_DATA $end
+$var parameter 17 z XMIT_LPIDLE $end
+$var reg 1 { PUDR $end
+$var reg 12 | TX_OSET [11:0] $end
+$var reg 1 } TX_OSET_indicate $end
+$var reg 1 ~ assert_lpidle $end
+$var reg 17 !" estado_actual [16:0] $end
+$var reg 17 "" estado_retorno_cg_idle [16:0] $end
+$var reg 17 #" prox_estado [16:0] $end
+$var reg 1 $" seg_CG_I $end
+$var reg 1 %" transmitting $end
+$var reg 10 &" tx_code_group [9:0] $end
+$var reg 1 '" tx_disparity $end
+$var reg 1 (" tx_even $end
+$var reg 1 )" xmit $end
+$upscope $end
+$upscope $end
+$scope module transmisor_tb $end
+$scope module TST0 $end
+$var wire 10 *" tx_code_group [9:0] $end
+$var parameter 32 +" h_freq $end
+$var reg 1 ! GTX_CLK $end
+$var reg 1 " RESET $end
+$var reg 8 ," TXD [7:0] $end
+$var reg 1 $ TX_EN $end
+$var reg 1 % TX_ER $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 +"
+b100 z
+b10 y
+b100000 x
+b10000 w
+b1000 v
+b10000000000 u
+b1000010111 t
+b111101000 s
+b100010111 r
+b1011101000 q
+b1100000111 p
+b11111000 o
+b1100001001 n
+b11110110 m
+b1100000101 l
+b11111010 k
+b1100001101 j
+b11110010 i
+b1100001100 h
+b11110011 g
+b1100001010 f
+b11110101 e
+b1100000110 d
+b11111001 c
+b1100001011 b
+b11110100 a
+b10010111 `
+b1101101000 _
+b1010111 ^
+b1110101000 ]
+b10000000000000000 \
+b100000000000000 [
+b10000000000000 Z
+b1000000000000 Y
+b1000000000000000 X
+b1 W
+b1000000000 V
+b100000000 U
+b1000000 T
+b10000000 S
+b1111101111 R
+b1111111111 Q
+b100000000000 P
+b1001100101 O
+b110011010 N
+b101101001 M
+b1010010110 L
+b101001110 K
+b1010110001 J
+b1000011110 I
+b111100001 H
+b100011110 G
+b1011100001 F
+b1100010001 E
+b11101110 D
+b10011110 C
+b1101100001 B
+b1010010001 A
+b101101110 @
+b1010011101 ?
+b101100010 >
+b110010001 =
+b1001101110 <
+b11001110 ;
+b1100110001 :
+b1011110 9
+b1110100001 8
+b1001010001 7
+b110101110 6
+b101010001 5
+b1010101110 4
+b1101001000 3
+b10110111 2
+b11010001 1
+b1100101110 0
+b1011001000 /
+b100110111 .
+b111001000 -
+b1000110111 ,
+b1001001110 +
+b110110001 *
+b1001001010 )
+b110110101 (
+b1010001110 '
+b101110001 &
+$end
+#0
+$dumpvars
+b0 ,"
+bx *"
+x)"
+x("
+x'"
+bx &"
+x%"
+x$"
+bx #"
+bx ""
+bx !"
+x~
+x}
+bx |
+x{
+0%
+0$
+b0 #
+0"
+0!
+$end
+#10
+b10000000000000000 #"
+b10 ""
+0%"
+b11111010 &"
+b11111010 *"
+0$"
+0{
+b0 |
+0'"
+0}
+0~
+0)"
+1("
+b1 !"
+1!
+#20
+0!
+#30
+1{
+b10 #"
+1}
+0("
+b1001001010 &"
+b1001001010 *"
+1'"
+b10000000000000000 !"
+1!
+1"
+#40
+0!
+#50
+1("
+b10000000000000000 #"
+b1100000101 &"
+b1100000101 *"
+0'"
+b10 !"
+1!
+#60
+0!
+#70
+b10 #"
+0("
+b1001001010 &"
+b1001001010 *"
+1'"
+b10000000000000000 !"
+1!
+#80
+0!
+#90
+1("
+b10000000000000000 #"
+b1100000101 &"
+b1100000101 *"
+0'"
+b10 !"
+1!
+#100
+0!
+#110
+b10 #"
+0("
+b1001001010 &"
+b1001001010 *"
+1'"
+b10000000000000000 !"
+1!
+#120
+0!
+#130
+1("
+b10000000000000000 #"
+b1100000101 &"
+b1100000101 *"
+0'"
+b10 !"
+1!
+#140
+0!
+#150
+b10 #"
+0("
+b1001001010 &"
+b1001001010 *"
+1'"
+b10000000000000000 !"
+1!
+#160
+0!
+b11110000 #
+b11110000 ,"
+1$
+#170
+1("
+b1000 ""
+b10000000000000000 #"
+b1100000101 &"
+b1100000101 *"
+0'"
+b10 !"
+1!
+#180
+0!
+#190
+b1000 #"
+0("
+b1001001010 &"
+b1001001010 *"
+1'"
+b10000000000000000 !"
+1!
+#200
+0!
+#210
+1("
+b100000 #"
+b1101101000 &"
+b1101101000 *"
+1%"
+0'"
+b1000 !"
+1!
+#220
+0!
+#230
+0("
+b1001001110 &"
+b1001001110 *"
+1'"
+b100000 !"
+1!
+#240
+0!
+#250
+1("
+b110110001 &"
+b110110001 *"
+0'"
+1!
+#260
+0!
+#270
+1'"
+1("
+b111001000 &"
+b111001000 *"
+1!
+b11110001 #
+b11110001 ,"
+#280
+0!
+#290
+0("
+b1000110111 &"
+b1000110111 *"
+0'"
+1!
+#300
+0!
+#310
+1'"
+0("
+b1011001000 &"
+b1011001000 *"
+1!
+b11110010 #
+b11110010 ,"
+#320
+0!
+#330
+1("
+b100110111 &"
+b100110111 *"
+0'"
+1!
+#340
+0!
+#350
+1'"
+1("
+b11010001 &"
+b11010001 *"
+1!
+b11110011 #
+b11110011 ,"
+#360
+0!
+#370
+0("
+b1100101110 &"
+b1100101110 *"
+0'"
+1!
+#380
+0!
+#390
+1'"
+0("
+b1101001000 &"
+b1101001000 *"
+1!
+b11110100 #
+b11110100 ,"
+#400
+0!
+#410
+1("
+b10110111 &"
+b10110111 *"
+0'"
+1!
+#420
+0!
+#430
+1'"
+1("
+b100011110 &"
+b100011110 *"
+1!
+b11111101 #
+b11111101 ,"
+#440
+0!
+#450
+0("
+b1011100001 &"
+b1011100001 *"
+0'"
+1!
+#460
+0!
+#470
+1'"
+0("
+b1000011110 &"
+b1000011110 *"
+1!
+b11111110 #
+b11111110 ,"
+#480
+0!
+#490
+1("
+b111100001 &"
+b111100001 *"
+0'"
+1!
+#500
+0!
+#510
+0("
+b1000011110 &"
+b1000011110 *"
+1'"
+1!
+#520
+0!
+#530
+1("
+b111100001 &"
+b111100001 *"
+0'"
+1!
+#540
+0!
+#550
+0("
+b1000011110 &"
+b1000011110 *"
+1'"
+1!
+#560
+0!
+#570
+1("
+b111100001 &"
+b111100001 *"
+0'"
+1!
+#580
+0!
+#590
+0("
+b1000011110 &"
+b1000011110 *"
+1'"
+1!
+#600
+0!
+#610
+1("
+b111100001 &"
+b111100001 *"
+0'"
+1!
+#620
+0!
+#630
+0("
+b1000011110 &"
+b1000011110 *"
+1'"
+1!
+#640
+0!
+#650
+1("
+b111100001 &"
+b111100001 *"
+0'"
+1!
+#660
+0!
+#670
+b100010111 &"
+b100010111 *"
+0%"
+1'"
+b10000000 !"
+b1000000 #"
+1("
+1!
+b0 #
+b0 ,"
+0$
+#680
+0!
+#690
+b10 #"
+0("
+b1110101000 &"
+b1110101000 *"
+0'"
+b1000000 !"
+1!
+#700
+0!
+#710
+1("
+b10 ""
+b100000000000000 #"
+b1100000101 &"
+b1100000101 *"
+1'"
+b10 !"
+1!
+#720
+0!
+#730
+b10 #"
+0("
+b1001100101 &"
+b1001100101 *"
+0'"
+b100000000000000 !"
+1!
+#740
+0!
+#750
+1("
+b100000000000000 #"
+b1100000101 &"
+b1100000101 *"
+1'"
+b10 !"
+1!
+#760
+0!
+#770
+b10 #"
+0("
+b1001100101 &"
+b1001100101 *"
+0'"
+b100000000000000 !"
+1!
+#780
+0!
+#790
+1("
+b100000000000000 #"
+b1100000101 &"
+b1100000101 *"
+1'"
+b10 !"
+1!
+#800
+0!
+#810
+b10 #"
+0("
+b1001100101 &"
+b1001100101 *"
+0'"
+b100000000000000 !"
+1!
+#820
+0!
+#830
+1("
+b100000000000000 #"
+b1100000101 &"
+b1100000101 *"
+1'"
+b10 !"
+1!
+#840
+0!
+#850
+b10 #"
+0("
+b1001100101 &"
+b1001100101 *"
+0'"
+b100000000000000 !"
+1!
+#860
+0!
+#870
+1("
+b100000000000000 #"
+b1100000101 &"
+b1100000101 *"
+1'"
+b10 !"
+1!

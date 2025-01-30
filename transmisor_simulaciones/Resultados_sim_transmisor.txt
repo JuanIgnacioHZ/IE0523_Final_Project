@@ -1,0 +1,2 @@
+VCD info: dumpfile transmisor_output.vcd opened for output.
+./tester.v:64: $finish called at 870 (1s)
